@@ -86,8 +86,6 @@ Both are on the [Releases](../../releases) page, each with its SHA-256 checksum.
 | **Python 3** | The runtime Streamlink and Ember run in | PSF License Agreement |
 
 Each ships with its licence text in the package; the app verifies every helper before running it.
-RAR and 7z extraction is the one thing not bundled — it uses a 7-Zip you already have, because that
-program's unRAR licence cannot be redistributed.
 
 </details>
 
