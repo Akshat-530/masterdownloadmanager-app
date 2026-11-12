@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  🪟 Windows 10 &amp; 11 · 📦 Installer &amp; Portable &amp;nbsp;·&amp;nbsp; 🚫 No ads · 🕵️ No telemetry · 👤 No account
+  🪟 Windows 10 &amp; 11 &nbsp;·&nbsp; 📦 Installer &amp; Portable &nbsp;·&nbsp; 🚫 No ads &nbsp;·&nbsp; 🕵️ No telemetry &nbsp;·&nbsp; 👤 No account
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 
 | | |
 |---|---|
-| ⚡ **Segmented downloads** | One file, many connections — split, rejoin, and finish fast over HTTP, HTTPS and FTP. |
+| ⚡ **Segmented downloads** | One file, many connections — split, rejoin and finish fast over HTTP, HTTPS and FTP. |
 | 🛟 **Crash-safe resume** | The part file keeps its own state, so a crash or a lost connection continues where it stopped. |
 | 🧩 **Browser capture** | Chrome, Chromium, Edge, Brave, Opera, Vivaldi and Firefox hand downloads straight to the app. |
 | 🎬 **Video &amp; audio** | YouTube and hundreds of other sites, with quality and format choice — four extractors as fallbacks. |
@@ -36,7 +36,7 @@
 | 🕒 **Scheduler &amp; queues** | Start queues at a time, on chosen days, with retries and a later queue. |
 | 🚦 **Speed limits** | Per-download and global, so a big download never eats the whole line. |
 | 📂 **Categories &amp; folders** | A folder per file type, or one folder for everything. |
-| ✅ **Checksums &amp; archives** | MD5, SHA-1, SHA-256 verification; extract ZIP, TAR and XZ right after the download. |
+| ✅ **Checksums &amp; archives** | MD5, SHA-1 and SHA-256 verification; extract ZIP, TAR and XZ right after the download. |
 | 🖥️ **Command line &amp; MCP** | The classic <code>/d /p /f</code> switches, a JSON terminal downloader, a local API, and an MCP server for AI assistants. |
 | 🌍 **85 languages** | Interface, dates, numbers and sizes follow your language. |
 | 🎨 **Themes &amp; accessibility** | Light and dark looks, interface scaling, keyboard navigation and the system's accessibility tree. |
@@ -146,5 +146,5 @@ came from, which is what a reference note is for.
 
 <p align="center">
   <b>Master Download Manager</b> — free to use, GPL-3.0-or-later<br>
-  Built by Akshat with Moon · <a href="https://akshat-530.github.io/masterdownloadmanager/">Website</a> · <a href="../../releases">Releases</a>
+  Built by Akshat with Moon &nbsp;·&nbsp; <a href="https://akshat-530.github.io/masterdownloadmanager/">Website</a> &nbsp;·&nbsp; <a href="../../releases">Releases</a>
 </p>
