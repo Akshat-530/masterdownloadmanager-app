@@ -78,27 +78,48 @@ no account anywhere.
 
 ## Download
 
-Windows 10 and 11, 64-bit. Two builds:
+Windows 10 and 11, 64-bit. **Every build is a full bundle** — the download engine, the browser
+integration and every helper program are inside, so video, audio, galleries and torrents work
+on the first start with nothing else to install.
 
 | Build | What it is |
 |---|---|
-| **Installer** | Sets the app up for the current user, with the browser integration and an entry in the Start menu. |
-| **Portable** | A folder you can put anywhere: settings, list, logs and helpers stay inside it; nothing is written to your profile. |
+| **Installer** | Sets the app up for the current user, with the browser integration and a Start menu entry. |
+| **Portable** | A folder you can put anywhere: settings, list, logs and the bundled helpers stay inside it; nothing is written to your profile. |
 
-Both are published on the [Releases](../../releases) page with their SHA-256 checksums. Video
-helpers (yt-dlp, lux, Streamlink, Ember, FFmpeg) are downloaded and verified by the app when you
-ask for them — they are not required for ordinary downloads.
+Both are published on the [Releases](../../releases) page with their SHA-256 checksums.
+
+### Included helpers
+
+| Program | Used for | Licence |
+|---|---|---|
+| **yt-dlp** | Video and audio from web pages | Unlicense |
+| **lux** | A second extractor, for pages yt-dlp struggles with | MIT |
+| **Streamlink** | Live streams (Twitch, YouTube live and others) | BSD-2-Clause |
+| **Ember** | Social platforms (TikTok, X, Instagram, Reddit and others) | MIT |
+| **gallery-dl** | Image galleries | GPL-2.0 |
+| **FFmpeg** | Muxing the downloaded video and audio into one file | its build's licence |
+| **Python 3** | The runtime Streamlink and Ember run in | PSF License Agreement |
+
+The app checks every helper before it runs it, and each ships with its own licence text in the
+package (see **Licences** below). Video helpers update from their publishers when you ask for it
+in the Helpers window. RAR and 7z extraction is the one thing not bundled — it uses a 7-Zip you
+already have, because that program's unRAR licence cannot be redistributed.
+
+Because the helpers are inside, the download is large; that is the trade for working offline on
+the first start.
 
 ---
 
 ## Privacy
 
 There is no telemetry, no analytics, no account and no advertising. The app talks to the servers
-you give it, to its own release list when it checks for updates, and to the helper programs you
-choose to install — nothing else. A crash report is written to a file on your computer and stays
-there until you choose to send it. The local automation API listens on `127.0.0.1` behind a token;
-remote control binds only the network interfaces you pick, with pairing, and is off until you
-enable it.
+you give it, to its own release list when it checks for updates, and — only when you use video,
+gallery or torrent features — the bundled helpers talk to the site you pointed them at, exactly as
+they would on their own. Nothing else leaves the machine. A crash report is written to a file on
+your computer and stays there until you choose to send it. The local automation API listens on
+`127.0.0.1` behind a token; remote control binds only the network interfaces you pick, with
+pairing, and is off until you enable it.
 
 ---
 
@@ -116,6 +137,11 @@ comes with the software it is built on, and it stays under it.
 
 The name, the icon and this repository's text are the project's own and are not covered by that
 licence.
+
+**Licences of the bundled programs.** The package ships the licence text of every helper beside it
+(`licences/`): yt-dlp (Unlicense), lux (MIT), Streamlink (BSD-2-Clause), Ember (MIT), gallery-dl
+(GPL-2.0), FFmpeg (the licence of the build included), Python (PSF License Agreement), plus the GPL
+text of this application, the attribution file and the third-party assets' notices.
 
 ---
 
@@ -136,10 +162,9 @@ licence.
 
 Fonts Geist and Poppins (SIL OFL 1.1); icons from Lucide (ISC), Tango (public domain), Silk
 (CC BY 2.5), Fluent (MIT), Adwaita and Breeze (LGPL-3.0); language flags from flag-icons (MIT); the
-IP-to-country table from DB-IP (CC BY 4.0, looked up on your computer). Helper programs keep their
-own licences and ship theirs with the app: yt-dlp (Unlicense), lux (MIT), Streamlink (BSD-2-Clause),
-Ember (MIT), FFmpeg and Python (their own). The interface is built on egui and eframe; the full
-list of Rust crates and their licences is in the build's software bill of materials.
+IP-to-country table from DB-IP (CC BY 4.0, looked up on your computer). The interface is built on
+egui and eframe, the network on Tokio, rustls and reqwest, torrents on librqbit — the full list of
+Rust crates and their licences is in the build's software bill of materials.
 
 ---
 
