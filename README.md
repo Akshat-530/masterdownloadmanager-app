@@ -141,7 +141,7 @@ hand-off.
 
 **No code, no artwork, no icons, no text and no trademarks of those products are used here**, apart
 from the open-source licence and copyright notice of the project this one is built on, which are
-kept as the GPL requires. Nothing was copied, decompiled or reverse engineered. This application is
+kept as the GPL requires. This application is
 not affiliated with, endorsed by, sponsored by or connected to any of them; their names and marks
 belong to their respective owners, and are mentioned only to describe where the idea came from.
 
