@@ -1,8 +1,10 @@
 <div align="center">
 
+<img src="assets/logo.png" alt="Master Download Manager" width="120">
+
 # Master Download Manager
 
-**Free download manager for Windows, macOS and Linux.**
+**Free download manager for Windows.**
 One list for files, video, image galleries and torrents.
 
 No ads · No telemetry · No account · Free to use
@@ -65,7 +67,7 @@ no account anywhere.
 |---|---|
 | **Command line** | The classic `/d /p /f /a /n /s` switches, a terminal downloader with JSON output, and a local API for other programs. |
 | **MCP server** | An assistant that speaks the Model Context Protocol can add and watch downloads. |
-| **Themes** | Built-in looks for Windows, macOS and Linux, light and dark, with the interface size and font weight you choose. |
+| **Themes** | Built-in looks, light and dark, with the interface size and font weight you choose. |
 | **85 languages** | The interface, dates, numbers, sizes and speeds follow the language you choose. |
 | **Tray and portable mode** | Keeps running in the notification area, or keeps its settings beside the program in a portable folder. |
 | **Accessibility** | Keyboard navigation throughout, the system's accessibility tree, and Windows' high contrast. |
@@ -74,15 +76,18 @@ no account anywhere.
 
 ---
 
-## Platforms
+## Download
 
-| System | What you get |
+Windows 10 and 11, 64-bit. Two builds:
+
+| Build | What it is |
 |---|---|
-| **Windows 10 and 11** | Installer, or a portable folder that keeps its settings beside the program. 64-bit. |
-| **macOS** | Builds for Apple silicon and Intel. |
-| **Linux** | AppImage, `.deb`, `.rpm` and `.tar.gz`. |
+| **Installer** | Sets the app up for the current user, with the browser integration and an entry in the Start menu. |
+| **Portable** | A folder you can put anywhere: settings, list, logs and helpers stay inside it; nothing is written to your profile. |
 
-Releases are published with checksums on the [Releases](../../releases) page.
+Both are published on the [Releases](../../releases) page with their SHA-256 checksums. Video
+helpers (yt-dlp, lux, Streamlink, Ember, FFmpeg) are downloaded and verified by the app when you
+ask for them — they are not required for ordinary downloads.
 
 ---
 
@@ -116,45 +121,25 @@ licence.
 
 ## Credits
 
-### Made by
+**Made by**
 
 - **Akshat** — product, design and direction, and every release.
 - **Moon** — a custom agent harness by Akshat — built the application with him: the interface, the
   engine work, the browser extension, the audit, and this page.
 
-### The original work
+**Special thanks**
 
-- **Ahmed Nefzaoui** — author of Mister Download Manager, the open-source project this application
-  is built on: its design, engine and most of its code. His copyright notice stays in the program
-  and in its licence, as the GPL requires.
+- **Ahmed Nefzaoui**, author of Mister Download Manager — for providing the core engine as open
+  source.
 
-### Assets
+**Third-party components**
 
-| Asset | Author | Licence |
-|---|---|---|
-| Geist Sans and Geist Mono (interface and code fonts) | Vercel | SIL Open Font License 1.1 |
-| Poppins (interface font) | Indian Type Foundry | SIL Open Font License 1.1 |
-| Lucide icons | Lucide Icons and contributors | ISC |
-| Tango Icon Theme | The Tango Desktop Project | Public domain |
-| Silk icon set | Mark James | CC BY 2.5 |
-| Fluent UI System Icons | Microsoft Corporation | MIT |
-| Adwaita icon theme | The GNOME Project | LGPL-3.0 |
-| Breeze icons | KDE Visual Design Group | LGPL-3.0-or-later |
-| flag-icons (language flags) | Panayiotis Lipiridis and contributors | MIT |
-| IP-to-country table | DB-IP | CC BY 4.0 — looked up on your computer, never sent anywhere |
-
-### Helper programs
-
-Installed by the app when you ask for them, each under its own licence, with its licence text
-shipped alongside: **yt-dlp** (Unlicense), **lux** (MIT), **Streamlink** (BSD-2-Clause),
-**Ember** (MIT), **FFmpeg** (the build's own licence), **Python** (PSF License Agreement).
-
-### Libraries
-
-The application is written in Rust and stands on the usual open-source crates — egui and eframe for
-the interface, Tokio for the network, rustls and reqwest for TLS and HTTP, librqbit for BitTorrent,
-rfd for file dialogs, and several hundred more, each listed with its licence in the build's
-software bill of materials.
+Fonts Geist and Poppins (SIL OFL 1.1); icons from Lucide (ISC), Tango (public domain), Silk
+(CC BY 2.5), Fluent (MIT), Adwaita and Breeze (LGPL-3.0); language flags from flag-icons (MIT); the
+IP-to-country table from DB-IP (CC BY 4.0, looked up on your computer). Helper programs keep their
+own licences and ship theirs with the app: yt-dlp (Unlicense), lux (MIT), Streamlink (BSD-2-Clause),
+Ember (MIT), FFmpeg and Python (their own). The interface is built on egui and eframe; the full
+list of Rust crates and their licences is in the build's software bill of materials.
 
 ---
 
