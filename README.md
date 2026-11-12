@@ -67,11 +67,11 @@ and every helper are inside, so video, galleries and torrents work on the first 
 
 | Build | What it is | Download |
 |---|---|---|
-| 🧰 **Installer** | For the current user: browser integration and a Start menu entry. | [MDM.setup.exe](../../releases/tag/setup-v5.2.2) |
-| 🎒 **Portable** | A folder anywhere on your disk: settings, list, logs and helpers stay inside it. | [MDM_Portable.zip](../../releases/tag/v5.2.2) |
+| 🧰 **Installer** | For the current user: browser integration and a Start menu entry. | [MDM.setup.exe](../../releases/tag/setup-v5.2.3) |
+| 🎒 **Portable** | A folder anywhere on your disk: settings, list, logs and helpers stay inside it. | [MDM_Portable.zip](../../releases/tag/v5.2.3) |
 
 Each build is its own release with its own SHA-256 checksum file. The browser extension has a
-release of its own too: [Browser extension 1.0.0](../../releases/tag/extension-v1.0.0).
+release of its own too: [Browser extension 1.1.0](../../releases/tag/extension-v1.1.0).
 
 <details>
 <summary><b>🧰 What's inside the bundle</b></summary>
