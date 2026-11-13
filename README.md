@@ -51,7 +51,7 @@
 ### 🔒 It's private, and it's yours
 
 - **No ads, no telemetry, no account** — ever.
-- **85 languages**, light and dark themes, interface scaling, keyboard navigation.
+- **85 languages**, interface scaling, keyboard navigation.
 - **Installer or portable** — the portable build keeps everything, helpers included, in one folder.
 
 <p align="center">
@@ -67,10 +67,10 @@ and every helper are inside, so video, galleries and torrents work on the first 
 
 | Build | What it is | Download |
 |---|---|---|
-| 🧰 **Installer** | For the current user: browser integration and a Start menu entry. | [MDM.setup.exe](../../releases/latest) |
+| 🧰 **Installer** | For the current user: Start menu entry, uninstall entry. | [MDM.setup.exe](../../releases/latest) |
 | 🎒 **Portable** | A folder anywhere on your disk: settings, list, logs and helpers stay inside it. | [MDM_Portable.zip](../../releases/latest) |
 
-One release holds every build and one SHA-256 checksum file. The browser extension comes with it too: [Browser extension 1.2.0](../../releases/latest).
+One release holds every build and one SHA-256 checksum file. The browser extension comes with it too: [Browser extension 1.3.0](../../releases/latest).
 
 <details>
 <summary><b>🧰 What's inside the bundle</b></summary>
